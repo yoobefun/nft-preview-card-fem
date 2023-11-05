@@ -172,6 +172,7 @@ main {
   text-align: center;
   color: var(--clr-hsl-neurtal4);
   font-family: 'Outfit', sans-serif;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 .attribution a {
