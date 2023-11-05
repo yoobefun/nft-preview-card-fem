@@ -1,0 +1,304 @@
+:root {
+  --clr-hsl-primary1: hsl(215, 51%, 70%);
+  --clr-hsl-primary2: hsl(178, 100%, 50%);
+
+  --clr-hsl-neutral1: hsl(217, 54%, 11%);
+  --clr-hsl-neutral2: hsl(216, 50%, 16%);
+  --clr-hsl-neutral3: hsl(215, 32%, 27%);
+  --clr-hsl-neurtal4: hsl(0, 0%, 100%);
+
+  --text-xxs: 0.5rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+  --text-10xl: 10rem;
+}
+
+/* font-family: 'Outfit', sans-serif; */
+
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.soft-blue {
+  color: var(--clr-hsl-primary1);
+}
+
+.cyan {
+  color: var(--clr-hsl-primary2);
+}
+
+.main-bg {
+  background-color: var(--clr-hsl-neutral1);
+}
+
+.card-bg {
+  background-color: var(--clr-hsl-neutral2);
+}
+
+.line {
+  background-color: var(--clr-hsl-neutral3);
+}
+
+.white {
+  color: var(--clr-hsl-neurtal4);
+}
+
+.card {
+  width: 252px;
+  margin: 3rem auto;
+  padding: 1.3rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Outfit', sans-serif;
+  position: relative;
+}
+
+.view-icon {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.background-view {
+  width: 252px;
+  height: 252px;
+  border-radius: 10px;
+  position: absolute;
+  cursor: pointer;
+  background-color: hsla(178, 100%, 50%, 0.3);
+  opacity: 0;
+}
+
+.card:hover .background-view:hover{
+  opacity: 1;
+}
+
+.title {
+  font-size: var(--text-2xl);
+}
+
+.hover {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.cursor:hover {
+  color: var(--clr-hsl-primary2);
+}
+
+.text {
+  line-height: 1.5rem;
+  font-size: var(--text-sm);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+  margin-left: 1.1rem;
+  font-size: var(--text-base);
+}
+
+.absolute {
+  position: absolute;
+  right: 80px;
+  bottom: 1px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.line {
+  height: 2px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  width: 30px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border: 2px solid var(--clr-hsl-neurtal4);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.name {
+  font-size: var(--text-sm);
+}
+
+.attribution {
+  font-size: var(--text-xs);
+  text-align: center;
+  color: var(--clr-hsl-neurtal4);
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 3rem;
+}
+.attribution a {
+  color: var(--clr-hsl-primary1);
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  .card {
+    width: 280px;
+    padding: 1.5rem;
+    margin: 5rem auto 2rem auto;
+  }
+
+  .view-icon {
+    margin-top: 115px;
+    margin-left: 115px;
+  }
+  
+  .background-view {
+    width: 280px;
+    height: 280px;
+  }
+
+  .title {
+    font-size: var(--text-3xl);
+  }
+  
+  .text {
+    font-size: var(--text-base);
+    width: 25ch;
+  }
+
+  .relative {
+    font-size: var(--text-lg);
+  }
+  
+  .absolute {
+    right: 90px;
+  }
+
+  .line {
+    height: 4px;
+  }
+  
+  .avatar {
+    width: 35px;
+  }
+  
+  .name {
+    font-size: var(--text-base);
+  }
+
+  .attribution {
+    font-size: var(--text-base);
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+
+/* xl */
+@media (min-width: 1280px) {
+  .card {
+    width: 310px;
+    padding: 2.5rem;
+    margin: 8rem auto 3rem auto;
+  }
+
+  .view-icon {
+    margin-top: 130px;
+    margin-left: 130px;
+  }
+  
+  .background-view {
+    width: 310px;
+    height: 310px;
+  }
+
+  .title {
+    font-size: var(--text-4xl);
+  }
+  
+  .text {
+    font-size: var(--text-lg);
+    width: 25ch;
+  }
+
+  .relative {
+    font-size: var(--text-xl);
+  }
+  
+  .absolute {
+    right: 100px;
+    bottom: 4px;
+  }
+
+  .line {
+    height: 6px;
+  }
+  
+  .avatar {
+    width: 45px;
+  }
+  
+  .name {
+    font-size: var(--text-lg);
+  }
+
+  .attribution {
+    font-size: var(--text-lg);
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
