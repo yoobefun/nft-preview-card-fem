@@ -168,12 +168,12 @@ main {
 }
 
 .attribution {
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   text-align: center;
   color: var(--clr-hsl-neurtal4);
   font-family: 'Outfit', sans-serif;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .attribution a {
   color: var(--clr-hsl-primary1);
@@ -232,7 +232,7 @@ main {
 
   .attribution {
     font-size: var(--text-base);
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
     margin-top: 2rem;
   }
 }
@@ -295,11 +295,16 @@ main {
 
   .attribution {
     font-size: var(--text-lg);
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     margin-top: 2rem;
   }
 }
 
 
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+  .attribution {
+    margin-bottom: 40rem;
+    margin-top: 2rem;
+  }
+}
